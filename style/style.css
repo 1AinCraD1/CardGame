@@ -1,0 +1,130 @@
+html, body{
+width: 100%;
+height: 90%;
+margin: 0;
+padding: 0;
+}
+
+h1{
+text-align: center
+}
+
+div{
+text-align: center;
+display: flex;
+align-items: center;
+}
+
+.game-space{
+height: 47%;
+}
+
+.left{
+float: left;
+width: 33.3%;
+height: 100%;
+background-color: LemonChiffon;
+flex-direction: column;
+padding-bottom: 0
+}
+
+.center{
+float: left;
+width: 33.4%;
+height: 100%;
+background-color: LightBlue;
+flex-direction: column;
+justify-content: space-evenly
+}
+
+.right{
+float: left;
+width: 33.3%;
+height: 100%;
+background-color: LightGreen;
+flex-direction: column;
+padding-bottom: 0
+}
+
+.score{
+background-color: blue;
+color: white;
+padding: 5px 10px;
+border-radius: 50%;
+}
+
+p, span{
+font-size: 20px;
+margin: 0
+}
+
+.pscore{
+margin-bottom: 3%
+}
+
+#result-message{
+font-size: 20px;
+}
+
+.button1{
+padding-top: 5%
+}
+
+.button2{
+padding-bottom: 5%
+}
+
+#generate{
+display: inline-block;
+background: #2196f3;
+color: #fff;
+padding: 12px;
+border-radius: 3px;
+font-size: 18px;
+font-weight: 100;
+cursor: pointer;
+}
+
+#reset-score{
+display: inline-block;
+background: #2196f3;
+color: #fff;
+padding: 12px;
+border-radius: 3px;
+font-size: 18px;
+font-weight: 100;
+cursor: pointer;
+}
+
+.card-image {
+width: 150px;
+height: 225px
+}
+
+@media (max-width: 576px) {
+  html, body{
+  width: 100%;
+  height: 100%;
+  }
+  
+  .game-space {
+    display: flex;
+    flex-direction: column;
+	height: 100%
+  }
+
+  .left,
+  .center,
+  .right {
+    width: 100%;
+  }
+  
+  .left,
+  .right {
+    height: 150%
+  }
+  
+  .center {
+    height: 100%
+  }
+}
